@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PaintingCalculator.Domain.Entities;
 using System.Collections.Generic;
 
 namespace PaitingCalculator.API.Controllers
@@ -8,7 +9,7 @@ namespace PaitingCalculator.API.Controllers
     {
         [Route("calculate")]
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] List<Wall> wallList)
         {
 
         }

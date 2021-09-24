@@ -8,7 +8,7 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
 COPY ["PaitingCalculator.API/PaitingCalculator.API.csproj", "PaitingCalculator.API/"]
 RUN dotnet restore "PaitingCalculator.API/PaitingCalculator.API.csproj"
